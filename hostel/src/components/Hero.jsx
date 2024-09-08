@@ -3,13 +3,16 @@ import video from '../assets/video.mp4'
 
 function Hero() {
   return (
-    <div className='h-screen items-center justify-center flex relative'>
-        <div className='h-screen w-screen absolute z-20 overflow-hidden inset-0'>
-          <video src={video} className=' lg:h-screen w-screen object-cover' muted autoPlay loop playsInline></video>
-
+      <div className='w-screen'>
+        <div>
+        <video src={video} className='w-screen' muted autoPlay loop playsInline></video>
+        <div className='fixed right-10  bottom-10'>
+          <button className='bg-gradient-to-r text-4xl p-4 border-2 border-black hover:text-orange-700 rounded-3xl from-orange-700 to-orange-400'>Support us</button>
+        </div>
         </div>
         
-    </div>
+        
+      </div>
   )
 }
 
