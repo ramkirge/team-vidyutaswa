@@ -7,11 +7,11 @@ function Nav() {
   return (
     <div className=' z-50 backdrop-blur-lg flex  fixed w-screen justify-between p-2 h-20'>
         <div className='flex space-x-0 h-2'>
-          <img className="h-20 m-1 w-20  lg:w-28 " src={Picture1}/>
+          <img className="h-20 m-1 w-20  lg:w-28 " alt='img1' src={Picture1}/>
           <span className='pt-4 text-xl lg:text-4xl text-black font-bold items-center'>TEAM VIDYUTASHWA</span>
         </div>
-        <div className='lg:hidden'>
-          <IoMenuSharp />
+        <div className=' p-3 lg:hidden'>
+          <IoMenuSharp className=' h-14 w-14' />
         </div>
         <div className='hidden lg:flex p-4 items-center text-xl text-black font-semibold space-x-20'>
           <ul> <a className='hover:text-orange-600' href="/">Home</a></ul>
